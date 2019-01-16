@@ -11,7 +11,7 @@ for most basic knowledge about Kleisli Category.
 for most basic knowledge functors.
 
 # project description
-1. We have simple class `Writer`
+1. We have simple type constructor `Writer`
     ```
     class Writer[X](val result: X, val log: String) {}
     ```
@@ -28,8 +28,8 @@ for most basic knowledge functors.
     }
     ```
     * function `compose` is `>=>`
-1. We could easily lift `Writer` to the functor, by implementing
-the `map` function
+1. We could easily lift type constructor `Writer` to the functor, 
+by implementing the `map` function
     ```
     class Writer[X](val result: X, val log: String) {
       def map[Y](f: Function[X, Y]): Writer[Y] = 
