@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/scala212-category-theory-kleisli-writer-category-functor.svg?branch=master)](https://travis-ci.com/mtumilowicz/scala212-category-theory-kleisli-writer-category-functor)
+
 # scala212-category-theory-kleisli-writer-category-functor
 _Reference_: https://bartoszmilewski.com/2015/02/03/functoriality/  
 
