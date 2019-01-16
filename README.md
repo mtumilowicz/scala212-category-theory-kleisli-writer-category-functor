@@ -25,7 +25,7 @@ for most basic knowledge functors.
       }
     }
     ```
-    function `compose` is `>=>`
+    * function `compose` is `>=>`
 1. We could easily lift `Writer` to the functor, by implementing
 the `map` function
     ```
