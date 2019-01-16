@@ -37,4 +37,4 @@ the `map` function
     
 **Notice that this argument is very general**: you can replace 
 `Writer` with any type constructor. As long as it supports a 
-fish operator and identity you can define `map` as well.
+fish operator (Kleisli Operator) and identity you can define `map` as well.
