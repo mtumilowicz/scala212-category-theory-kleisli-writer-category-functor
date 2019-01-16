@@ -29,11 +29,12 @@ for most basic knowledge functors.
 1. We could easily lift `Writer` to the functor, by implementing
 the `map` function
     ```
-    fmap f = id >=> (\x -> return (f x))
-    ```
-    ```
     class Writer[X](val result: X, val log: String) {
       def map[Y](f: Function[X, Y]): Writer[Y] = 
         KleisliWriterCategory.compose[Writer[X], X, Y](identity, KleisliWriterCategory.identity.compose(f))(this)
     }
     ```
+    
+**Notice that this argument is very general**: you can replace 
+`Writer` with any type constructor. As long as it supports a 
+fish operator and identity you can define `map` as well.
